@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristiano Ronaldo — Official Biography & Football Legacy</title>
+  <meta name="description" content="Explore the cinematic story, world records, career milestones, trophies, and achievements of Cristiano Ronaldo — Portugal icon and football legend.">
+  <meta name="keywords" content="Cristiano Ronaldo, CR7, Ronaldo Biography, Real Madrid, Manchester United, Portugal, Champions League, Ballon d'Or, Football Records">
+  <meta name="author" content="Cristiano Ronaldo Tribute">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cristiano Ronaldo — Official Biography & Football Legacy">
+  <meta property="og:description" content="The story of a football icon. Explore career milestones, 5 Ballon d'Ors, 5 UEFA Champions Leagues, and 900+ career goals.">
+  <meta property="og:image" content="assets/images/hero-ronaldo.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Cristiano Ronaldo — Official Biography & Football Legacy">
+  <meta property="twitter:description" content="The story of a football icon. Explore career milestones, world records, and cinematic archives.">
+  <meta property="twitter:image" content="assets/images/hero-ronaldo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23050505'/><text x='50%' y='65%' font-family='sans-serif' font-weight='900' font-size='42' fill='%23DA291C' text-anchor='middle'>CR7</text></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand" aria-label="Cristiano Ronaldo Home">
+        <div class="brand-badge">7</div>
+        <div class="brand-text">
+          <span class="brand-name">CRISTIANO RONALDO</span>
+          <span class="brand-sub">PORTUGAL ICON • CR7</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#biography" class="nav-link">Biography</a></li>
+          <li><a href="#career" class="nav-link">Career</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#records" class="nav-link">Records</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Audio Toggle & Mobile Hamburger) -->
+      <div class="nav-actions">
+        <button class="audio-btn" id="audioBtn" title="Toggle Stadium Audio Atmosphere" aria-label="Toggle Stadium Atmosphere">
+          <div class="audio-waves">
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+            <span class="audio-bar"></span>
+          </div>
+          <span>STADIUM ATMOSPHERE</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#biography" class="mobile-nav-link">Biography</a></li>
+      <li><a href="#career" class="mobile-nav-link">Career</a></li>
+      <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+      <li><a href="#records" class="mobile-nav-link">Records</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <header class="hero-section" id="hero">
+      <!-- Background Image with Gradient Overlay -->
+      <div class="hero-bg">
+        <img src="assets/images/hero-ronaldo.jpg" alt="Cristiano Ronaldo Portugal Portrait" class="hero-bg-img" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Animated Stadium Particles Canvas -->
+      <canvas id="heroCanvas"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          <span>THE STORY OF A FOOTBALL ICON</span>
+        </div>
+
+        <h1 class="hero-title">
+          CRISTIANO
+          <span>RONALDO</span>
+        </h1>
+
+        <p class="hero-tagline">"The story of a football icon."</p>
+
+        <p class="hero-description">
+          From the steep streets of Funchal, Madeira, to becoming the most prolific goalscorer in the history of international football. A masterclass in dedication, relentless ambition, and unmatched athleticism spanning over two decades at the absolute pinnacle.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#career" class="btn btn-primary">
+            Explore Career
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+          <a href="#achievements" class="btn btn-secondary">
+            View Achievements
+            <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-3a2 2 0 012-2h2m12 7h2a2 2 0 002-2v-3a2 2 0 00-2-2h-2m-3 8v3H9v-3m0-12h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+        </div>
+
+        <!-- Quick Stats Overview Bar -->
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-num gold">5</span>
+            <span class="hero-stat-label">Ballon d'Or</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">5</span>
+            <span class="hero-stat-label">UCL Titles</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num accent">146</span>
+            <span class="hero-stat-label">Int'l Goals</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">900+</span>
+            <span class="hero-stat-label">Career Goals</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Scroll Down -->
+      <a href="#biography" class="hero-scroll" aria-label="Scroll down to Biography">
+        <div class="scroll-icon"></div>
+        <span>Scroll Down</span>
+      </a>
+    </header>
+
+    <!-- ==========================================================================
+         BIOGRAPHY SECTION
+         ========================================================================== -->
+    <section class="section" id="biography">
+      <div class="ambient-glow glow-red" style="top: 10%; right: -150px;"></div>
+      <div class="ambient-glow glow-gold" style="bottom: 10%; left: -150px;"></div>
+
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">THE ARCHIVE</span>
+          <h2 class="section-title">THE LIFE OF <span>CRISTIANO RONALDO</span></h2>
+          <p class="section-subtitle">
+            Cristiano Ronaldo dos Santos Aveiro is a Portuguese professional footballer widely recognized for his extraordinary goalscoring record, athletic ability, and enduring longevity at the highest level of football.
+          </p>
+        </div>
+
+        <!-- Bio Overview Card -->
+        <div class="bio-overview-card reveal-fade-up">
+          <div class="bio-overview-text">
+            <h3>Born to Make History</h3>
+            <p>
+              Born on <strong>5 February 1985</strong> in Funchal, Madeira, Portugal, Ronaldo was raised in the working-class neighbourhood of Santo António. From barefoot games on concrete alleys to world dominance, his ascent is the definitive modern tale of obsessive discipline, physical transformation, and uncompromising belief.
+            </p>
+            <div class="bio-highlight-pill">
+              <span>CR7 • 20+ Years at World Peak Level</span>
+            </div>
+          </div>
+          <div class="bio-profile-stats">
+            <div class="profile-stat-box">
+              <span class="stat-box-title">Full Name</span>
+              <span class="stat-box-value">C. Ronaldo dos Santos Aveiro</span>
+            </div>
+            <div class="profile-stat-box">
+              <span class="stat-box-title">Birthplace</span>
+              <span class="stat-box-value">Funchal, Madeira, Portugal</span>
+            </div>
+            <div class="profile-stat-box">
+              <span class="stat-box-title">Position</span>
+              <span class="stat-box-value">Forward / Winger</span>
+            </div>
+            <div class="profile-stat-box">
+              <span class="stat-box-title">Squad Number</span>
+              <span class="stat-box-value">#7 (Iconic)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline-Style Biography -->
+        <div class="bio-timeline-wrapper">
+
+          <!-- 1. Early Life in Madeira -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">1985 — 2001</span>
+              <h3 class="bio-card-title">Early Life in Madeira</h3>
+              <p class="bio-card-text">
+                Ronaldo developed an unrelenting passion for football from an early age in Funchal. He began his youth career playing for local side <strong>Andorinha</strong>, where his father served as kit man, before moving to <strong>CD Nacional</strong>. His precocious technical speed caught the eyes of scouts across mainland Portugal.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">Funchal, Madeira</li>
+                <li class="bio-meta-tag">CF Andorinha</li>
+                <li class="bio-meta-tag">CD Nacional</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/madeira.jpg" alt="Madeira CR7 Museum in Funchal" loading="lazy">
+              <div class="bio-media-badge">Funchal, Madeira</div>
+            </div>
+          </article>
+
+          <!-- 2. Sporting CP -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2001 — 2003</span>
+              <h3 class="bio-card-title">Sporting CP Academy Breakthrough</h3>
+              <p class="bio-card-text">
+                At just 12 years old, Ronaldo moved alone to Lisbon to join Sporting CP's famed youth academy. He became the only player in club history to represent the under-16, under-17, under-18, B-team, and first team in a single season. In August 2003, his mesmerizing display against Manchester United in the inauguration of the Estádio José Alvalade sealed his transfer to England.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">First-team Debut at 17</li>
+                <li class="bio-meta-tag">Supertaça Cândido de Oliveira</li>
+                <li class="bio-meta-tag">31 Appearances</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/young-cr7.jpg" alt="Young Cristiano Ronaldo Breakthrough" loading="lazy">
+              <div class="bio-media-badge">Sporting CP to Man Utd</div>
+            </div>
+          </article>
+
+          <!-- 3. Manchester United First Spell -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2003 — 2009</span>
+              <h3 class="bio-card-title">Manchester United: The Making of an Icon</h3>
+              <p class="bio-card-text">
+                Handed the iconic number 7 shirt by Sir Alex Ferguson, Ronaldo evolved from a dazzling step-over winger into a ruthless goal-machine. In 2007–08, he scored 42 goals across all competitions, leading United to the Premier League and UEFA Champions League double, earning him his maiden <strong>Ballon d'Or</strong> and FIFA World Player of the Year awards.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">2008 UEFA Champions League</li>
+                <li class="bio-meta-tag">3x Premier League Titles</li>
+                <li class="bio-meta-tag">2008 Ballon d'Or</li>
+                <li class="bio-meta-tag">118 Goals in 292 Apps</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/manchester-united-classic.jpg" alt="Cristiano Ronaldo at Manchester United" loading="lazy">
+              <div class="bio-media-badge">Old Trafford Glory</div>
+            </div>
+          </article>
+
+          <!-- 4. Real Madrid -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2009 — 2018</span>
+              <h3 class="bio-card-title">Real Madrid: The Galáctico Era</h3>
+              <p class="bio-card-text">
+                Transferred to Real Madrid in a then-world record £80 million deal before 80,000 fans at the Santiago Bernabéu. Over nine seasons, Ronaldo shattered every scoring record in club history, netting an astonishing <strong>450 goals in 438 matches</strong> (1.03 goals per game). He spearheaded Real Madrid to four Champions League titles—including the historic three-peat (2016, 2017, 2018)—and captured four more Ballon d'Or trophies.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">All-Time Top Scorer: 450 Goals</li>
+                <li class="bio-meta-tag">4x UEFA Champions League</li>
+                <li class="bio-meta-tag">4x Ballon d'Or Awards</li>
+                <li class="bio-meta-tag">2x La Liga Titles</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/real-madrid.jpg" alt="Cristiano Ronaldo at Real Madrid" loading="lazy">
+              <div class="bio-media-badge">Santiago Bernabéu Legend</div>
+            </div>
+          </article>
+
+          <!-- 5. Juventus -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2018 — 2021</span>
+              <h3 class="bio-card-title">Juventus: Dominance in Italy</h3>
+              <p class="bio-card-text">
+                Seeking a new challenge in Serie A, Ronaldo signed with Juventus and became the fastest player in club history to reach 100 goals (in just 131 games). He won two consecutive Serie A titles, the Coppa Italia, and two Supercoppa Italiana titles, also winning the Serie A Capocannoniere top-scorer award.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">101 Goals in 134 Matches</li>
+                <li class="bio-meta-tag">2x Serie A Titles</li>
+                <li class="bio-meta-tag">Serie A Player of the Year</li>
+                <li class="bio-meta-tag">Capocannoniere Winner</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/juventus.jpg" alt="Cristiano Ronaldo at Juventus" loading="lazy">
+              <div class="bio-media-badge">Turin Triumph</div>
+            </div>
+          </article>
+
+          <!-- 6. Return to Manchester United -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2021 — 2022</span>
+              <h3 class="bio-card-title">Return to Manchester United</h3>
+              <p class="bio-card-text">
+                In August 2021, Ronaldo completed a triumphant return to Old Trafford. On his second debut, he scored twice against Newcastle United to a rapturous reception. He finished the season as Manchester United's top scorer with 24 goals across all competitions and was voted the Sir Matt Busby Player of the Year, officially passing 800 career goals.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">24 Goals in 38 Matches</li>
+                <li class="bio-meta-tag">800th Career Goal Milestone</li>
+                <li class="bio-meta-tag">Sir Matt Busby Player of the Year</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/manchester-united-return.jpg" alt="Cristiano Ronaldo Old Trafford Return" loading="lazy">
+              <div class="bio-media-badge">Old Trafford Return</div>
+            </div>
+          </article>
+
+          <!-- 7. Al Nassr -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2023 — Present</span>
+              <h3 class="bio-card-title">Al Nassr: Pioneering a New Era</h3>
+              <p class="bio-card-text">
+                In January 2023, Ronaldo joined Saudi Arabian club Al Nassr, catalyzing a worldwide renaissance for the Saudi Pro League. He won the Arab Club Champions Cup in 2023 and set the single-season league scoring record with 35 goals, becoming the first player in history to win top-scorer awards in four different top-flight leagues.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">Arab Club Champions Cup</li>
+                <li class="bio-meta-tag">Saudi Pro League Golden Boot (35 Goals)</li>
+                <li class="bio-meta-tag">First to Top-Score in 4 Leagues</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/al-nassr.jpg" alt="Cristiano Ronaldo Al Nassr Era" loading="lazy">
+              <div class="bio-media-badge">Al Nassr Captain</div>
+            </div>
+          </article>
+
+          <!-- 8. Portugal National Team -->
+          <article class="bio-item reveal-fade-up">
+            <div class="bio-node"></div>
+            <div class="bio-card">
+              <span class="bio-card-era">2003 — Present</span>
+              <h3 class="bio-card-title">Portugal: Eternal National Icon</h3>
+              <p class="bio-card-text">
+                Ronaldo made his senior international debut for Portugal in August 2003 at age 18. He captained Portugal to their historic first major silverware at <strong>UEFA EURO 2016</strong> in France, followed by the inaugural <strong>2019 UEFA Nations League</strong> title. UEFA lists Ronaldo with <strong>234 appearances and 146 goals</strong> for Portugal—both all-time world records in men's international football.
+              </p>
+              <ul class="bio-meta-list">
+                <li class="bio-meta-tag">UEFA EURO 2016 Champions</li>
+                <li class="bio-meta-tag">UEFA Nations League 2019</li>
+                <li class="bio-meta-tag">World Record 146 Goals</li>
+                <li class="bio-meta-tag">World Record 234 Caps</li>
+              </ul>
+            </div>
+            <div class="bio-media">
+              <img src="assets/images/portugal-nation.jpg" alt="Cristiano Ronaldo Portugal National Team" loading="lazy">
+              <div class="bio-media-badge">Portugal Captain</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAREER TIMELINE (Interactive Horizontal / Vertical)
+         ========================================================================== -->
+    <section class="section career-section" id="career">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">CHRONICLES</span>
+          <h2 class="section-title">CAREER <span>TIMELINE</span></h2>
+          <p class="section-subtitle">
+            An interactive chronicle of Cristiano Ronaldo's defining eras across Europe's grandest stages and his global journey.
+          </p>
+        </div>
+
+        <!-- Interactive Career Era Buttons -->
+        <div class="career-nav-tabs reveal-fade-up">
+          <button class="career-tab-btn active" data-era="mu1">
+            <span class="tab-year">2003</span> Manchester United
+          </button>
+          <button class="career-tab-btn" data-era="rm">
+            <span class="tab-year">2009</span> Real Madrid
+          </button>
+          <button class="career-tab-btn" data-era="juv">
+            <span class="tab-year">2018</span> Juventus
+          </button>
+          <button class="career-tab-btn" data-era="mu2">
+            <span class="tab-year">2021</span> Man Utd Return
+          </button>
+          <button class="career-tab-btn" data-era="aln">
+            <span class="tab-year">2023</span> Al Nassr
+          </button>
+        </div>
+
+        <!-- Career Panels -->
+        <div class="career-display-container reveal-fade-up">
+
+          <!-- 2003 Man Utd -->
+          <div class="career-panel active" id="career-mu1">
+            <div class="career-panel-media">
+              <img src="assets/images/manchester-united-classic.jpg" alt="Cristiano Ronaldo Manchester United Era">
+              <div class="career-panel-overlay">
+                <span class="career-era-badge">2003 — 2009</span>
+                <span class="career-club-name">Manchester United</span>
+              </div>
+            </div>
+            <div class="career-panel-info">
+              <div>
+                <p class="career-panel-desc">
+                  Arriving at Old Trafford as an 18-year-old prodigy, Ronaldo was molded by Sir Alex Ferguson into football's most complete attacking weapon. His unforgettable 2007–08 campaign brought the Champions League trophy to Manchester and crowned him with his first Ballon d'Or.
+                </p>
+                <div class="career-stats-row">
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">292</span>
+                    <span class="career-stat-title">Appearances</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">118</span>
+                    <span class="career-stat-title">Goals</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">9</span>
+                    <span class="career-stat-title">Trophies</span>
+                  </div>
+                </div>
+              </div>
+              <div class="career-achievements-list">
+                <h4>MAJOR HONOURS</h4>
+                <ul>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    UEFA Champions League (2008)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Ballon d'Or & FIFA World Player of the Year (2008)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    3x Premier League Titles (2007, 2008, 2009)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2009 Real Madrid -->
+          <div class="career-panel" id="career-rm">
+            <div class="career-panel-media">
+              <img src="assets/images/real-madrid.jpg" alt="Cristiano Ronaldo Real Madrid Era">
+              <div class="career-panel-overlay">
+                <span class="career-era-badge">2009 — 2018</span>
+                <span class="career-club-name">Real Madrid</span>
+              </div>
+            </div>
+            <div class="career-panel-info">
+              <div>
+                <p class="career-panel-desc">
+                  The peak of football perfection. In nine majestic seasons in the Spanish capital, Ronaldo surpassed Raúl to become Real Madrid's all-time top scorer with 450 goals in 438 games. He delivered four Champions League titles, including three back-to-back crowns between 2016 and 2018.
+                </p>
+                <div class="career-stats-row">
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">438</span>
+                    <span class="career-stat-title">Appearances</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">450</span>
+                    <span class="career-stat-title">Goals</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">16</span>
+                    <span class="career-stat-title">Trophies</span>
+                  </div>
+                </div>
+              </div>
+              <div class="career-achievements-list">
+                <h4>MAJOR HONOURS</h4>
+                <ul>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    4x UEFA Champions League (2014, 2016, 2017, 2018)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    4x Ballon d'Or Awards (2013, 2014, 2016, 2017)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    2x La Liga & 3x FIFA Club World Cups
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2018 Juventus -->
+          <div class="career-panel" id="career-juv">
+            <div class="career-panel-media">
+              <img src="assets/images/juventus.jpg" alt="Cristiano Ronaldo Juventus Era">
+              <div class="career-panel-overlay">
+                <span class="career-era-badge">2018 — 2021</span>
+                <span class="career-club-name">Juventus</span>
+              </div>
+            </div>
+            <div class="career-panel-info">
+              <div>
+                <p class="career-panel-desc">
+                  Taking on the defensive tacticians of Italian Calcio, Ronaldo dominated Serie A. He became the first footballer to win every domestic trophy in England, Spain, and Italy, cementing his place as an all-time great across three major European leagues.
+                </p>
+                <div class="career-stats-row">
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">134</span>
+                    <span class="career-stat-title">Appearances</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">101</span>
+                    <span class="career-stat-title">Goals</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">5</span>
+                    <span class="career-stat-title">Trophies</span>
+                  </div>
+                </div>
+              </div>
+              <div class="career-achievements-list">
+                <h4>MAJOR HONOURS</h4>
+                <ul>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    2x Serie A Champions (2019, 2020)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Coppa Italia & 2x Supercoppa Italiana
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Serie A Capocannoniere Top Scorer
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2021 Man Utd Return -->
+          <div class="career-panel" id="career-mu2">
+            <div class="career-panel-media">
+              <img src="assets/images/manchester-united-return.jpg" alt="Cristiano Ronaldo Return to Manchester United">
+              <div class="career-panel-overlay">
+                <span class="career-era-badge">2021 — 2022</span>
+                <span class="career-club-name">Manchester United Return</span>
+              </div>
+            </div>
+            <div class="career-panel-info">
+              <div>
+                <p class="career-panel-desc">
+                  An emotional homecoming to Old Trafford that sent waves through world football. Ronaldo delivered critical Champions League match-winners, recorded a Premier League hat-trick against Tottenham, and eclipsed the historic 800 career goals milestone.
+                </p>
+                <div class="career-stats-row">
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">54</span>
+                    <span class="career-stat-title">Appearances</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">27</span>
+                    <span class="career-stat-title">Goals</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">800+</span>
+                    <span class="career-stat-title">Historic Goals</span>
+                  </div>
+                </div>
+              </div>
+              <div class="career-achievements-list">
+                <h4>MAJOR HONOURS</h4>
+                <ul>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Sir Matt Busby Player of the Year (2022)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Premier League Player of the Month (Multiple)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    PFA Premier League Team of the Year
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2023 Al Nassr -->
+          <div class="career-panel" id="career-aln">
+            <div class="career-panel-media">
+              <img src="assets/images/al-nassr.jpg" alt="Cristiano Ronaldo Al Nassr">
+              <div class="career-panel-overlay">
+                <span class="career-era-badge">2023 — Present</span>
+                <span class="career-club-name">Al Nassr</span>
+              </div>
+            </div>
+            <div class="career-panel-info">
+              <div>
+                <p class="career-panel-desc">
+                  Ronaldo embraced a transformative global adventure in Riyadh, spearheading Al Nassr's attack. In his first full season, he scored 35 league goals to claim the Saudi Pro League Golden Boot, setting an all-time competition record.
+                </p>
+                <div class="career-stats-row">
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">70+</span>
+                    <span class="career-stat-title">Appearances</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">65+</span>
+                    <span class="career-stat-title">Goals</span>
+                  </div>
+                  <div class="career-stat-unit">
+                    <span class="career-stat-value">35</span>
+                    <span class="career-stat-title">Record League Goals</span>
+                  </div>
+                </div>
+              </div>
+              <div class="career-achievements-list">
+                <h4>MAJOR HONOURS</h4>
+                <ul>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Arab Club Champions Cup Winner (2023)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Saudi Pro League Golden Boot (All-Time Record 35 Goals)
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Arab Club Champions Cup Top Scorer
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section class="section" id="achievements">
+      <div class="ambient-glow glow-gold" style="top: 25%; left: -200px;"></div>
+      <div class="ambient-glow glow-red" style="bottom: 15%; right: -200px;"></div>
+
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag gold">TROPHY CABINET</span>
+          <h2 class="section-title">LEGENDARY <span>ACHIEVEMENTS</span></h2>
+          <p class="section-subtitle">
+            An unparalleled collection of world-class individual accolades and team silverware gathered across over two decades of unrelenting brilliance.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- 1. 5 Ballon d'Or -->
+          <article class="achievement-card reveal-fade-up">
+            <div>
+              <div class="achievement-icon-wrapper">
+                <div class="achievement-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="achievement-count">5</span>
+              </div>
+              <h3 class="achievement-title">Ballon d'Or Awards</h3>
+              <p class="achievement-desc">
+                Crowned the best footballer on planet Earth five times. Ronaldo's triumphs in 2008, 2013, 2014, 2016, and 2017 stand as a testament to sustained individual mastery over a full decade.
+              </p>
+            </div>
+            <div class="achievement-years-pill">
+              <span class="year-chip">2008</span>
+              <span class="year-chip">2013</span>
+              <span class="year-chip">2014</span>
+              <span class="year-chip">2016</span>
+              <span class="year-chip">2017</span>
+            </div>
+          </article>
+
+          <!-- 2. 5 UEFA Champions League -->
+          <article class="achievement-card reveal-fade-up">
+            <div>
+              <div class="achievement-icon-wrapper">
+                <div class="achievement-icon">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <span class="achievement-count">5</span>
+              </div>
+              <h3 class="achievement-title">UEFA Champions League</h3>
+              <p class="achievement-desc">
+                "Mr. Champions League." Five European crowns won with two historic clubs (Manchester United 2008; Real Madrid 2014, 2016, 2017, 2018), including the legendary three-peat.
+              </p>
+            </div>
+            <div class="achievement-years-pill">
+              <span class="year-chip">2008 (Man Utd)</span>
+              <span class="year-chip">2014</span>
+              <span class="year-chip">2016</span>
+              <span class="year-chip">2017</span>
+              <span class="year-chip">2018 (Real Madrid)</span>
+            </div>
+          </article>
+
+          <!-- 3. UEFA EURO 2016 -->
+          <article class="achievement-card reveal-fade-up">
+            <div>
+              <div class="achievement-icon-wrapper">
+                <div class="achievement-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <span class="achievement-count">1</span>
+              </div>
+              <h3 class="achievement-title">UEFA EURO 2016 Champion</h3>
+              <p class="achievement-desc">
+                Portugal's first major international title. As captain, Ronaldo scored three crucial goals, provided three assists, and passionately inspired his nation from the touchline in the Saint-Denis final.
+              </p>
+            </div>
+            <div class="achievement-years-pill">
+              <span class="year-chip">10 July 2016</span>
+              <span class="year-chip">Stade de France</span>
+              <span class="year-chip">Portugal Captain</span>
+            </div>
+          </article>
+
+          <!-- 4. UEFA Nations League 2019 -->
+          <article class="achievement-card reveal-fade-up">
+            <div>
+              <div class="achievement-icon-wrapper">
+                <div class="achievement-icon">
+                  <svg viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></svg>
+                </div>
+                <span class="achievement-count">1</span>
+              </div>
+              <h3 class="achievement-title">UEFA Nations League 2019</h3>
+              <p class="achievement-desc">
+                Inaugural UEFA Nations League triumph on home soil. Ronaldo's breathtaking semi-final hat-trick against Switzerland paved the way to glory in Porto.
+              </p>
+            </div>
+            <div class="achievement-years-pill">
+              <span class="year-chip">9 June 2019</span>
+              <span class="year-chip">Estádio do Dragão</span>
+              <span class="year-chip">Inaugural Champions</span>
+            </div>
+          </article>
+
+          <!-- 5. Multiple Domestic League Titles -->
+          <article class="achievement-card reveal-fade-up">
+            <div>
+              <div class="achievement-icon-wrapper">
+                <div class="achievement-icon">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <span class="achievement-count">7</span>
+              </div>
+              <h3 class="achievement-title">Domestic League Titles</h3>
+              <p class="achievement-desc">
+                Champion across three top European leagues: 3x English Premier League with Manchester United, 2x Spanish La Liga with Real Madrid, and 2x Italian Serie A with Juventus.
+              </p>
+            </div>
+            <div class="achievement-years-pill">
+              <span class="year-chip">3x Premier League</span>
+              <span class="year-chip">2x La Liga</span>
+              <span class="year-chip">2x Serie A</span>
+            </div>
+          </article>
+
+          <!-- 6. Major Scoring Accolades -->
+          <article class="achievement-card reveal-fade-up">
+            <div>
+              <div class="achievement-icon-wrapper">
+                <div class="achievement-icon">
+                  <svg viewBox="0 0 24 24"><polygon points="6 2 18 2 18 6 6 6"/><polygon points="3 6 21 6 21 10 3 10"/><polygon points="4 10 20 10 18 22 6 22"/></svg>
+                </div>
+                <span class="achievement-count">4</span>
+              </div>
+              <h3 class="achievement-title">European Golden Shoes</h3>
+              <p class="achievement-desc">
+                Awarded four times to the top league goalscorer across all European domestic divisions (2007–08, 2010–11, 2013–14, 2014–15). Also winner of the 2009 FIFA Puskás Award and 3x UEFA Best Player in Europe.
+              </p>
+            </div>
+            <div class="achievement-years-pill">
+              <span class="year-chip">4x Golden Shoe</span>
+              <span class="year-chip">FIFA The Best (2x)</span>
+              <span class="year-chip">2009 Puskás Award</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RECORDS SECTION (Statistics Dashboard)
+         ========================================================================== -->
+    <section class="section records-section" id="records">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">DATA & MILESTONES</span>
+          <h2 class="section-title">STATISTICS & <span>WORLD RECORDS</span></h2>
+          <p class="section-subtitle">
+            Every number backed by verified UEFA, FIFA, and official international match archives. Real milestones achieved over 23 years of professional excellence.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="records-filter-group reveal-fade-up">
+          <button class="record-filter-btn active" data-filter="all">All Records</button>
+          <button class="record-filter-btn" data-filter="international">International</button>
+          <button class="record-filter-btn" data-filter="ucl">Champions League</button>
+          <button class="record-filter-btn" data-filter="overall">Career Totals</button>
+        </div>
+
+        <!-- Dashboard Grid with Animated Counters -->
+        <div class="records-dashboard">
+
+          <!-- 1. International Goals -->
+          <div class="record-card reveal-fade-up" data-category="international">
+            <div class="record-header">
+              <span class="record-category">Portugal</span>
+              <span class="record-badge">World Record #1</span>
+            </div>
+            <div class="record-number" data-target="146">0</div>
+            <h4 class="record-label">International Goals</h4>
+            <p class="record-detail">The all-time highest goalscorer in men's international football history, surpassing Ali Daei's record.</p>
+          </div>
+
+          <!-- 2. Champions League Goals -->
+          <div class="record-card reveal-fade-up" data-category="ucl">
+            <div class="record-header">
+              <span class="record-category">UEFA</span>
+              <span class="record-badge">All-Time Leader</span>
+            </div>
+            <div class="record-number" data-target="140">0</div>
+            <h4 class="record-label">Champions League Goals</h4>
+            <p class="record-detail">UEFA records him as all-time leading scorer with 140 goals in 183 appearances across 19 Champions League seasons.</p>
+          </div>
+
+          <!-- 3. Portugal Appearances -->
+          <div class="record-card reveal-fade-up" data-category="international">
+            <div class="record-header">
+              <span class="record-category">Portugal</span>
+              <span class="record-badge">World Record Caps</span>
+            </div>
+            <div class="record-number" data-target="234">0</div>
+            <h4 class="record-label">International Appearances</h4>
+            <p class="record-detail">Most international caps in men's world football history, representing Portugal for over 23 consecutive years.</p>
+          </div>
+
+          <!-- 4. Major Trophies -->
+          <div class="record-card reveal-fade-up" data-category="overall">
+            <div class="record-header">
+              <span class="record-category">Silverware</span>
+              <span class="record-badge">Club & Country</span>
+            </div>
+            <div class="record-number" data-target="35" data-suffix="+">0</div>
+            <h4 class="record-label">Major Career Trophies</h4>
+            <p class="record-detail">Silverware across Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr, and Portugal.</p>
+          </div>
+
+          <!-- 5. Ballon d'Or Awards -->
+          <div class="record-card reveal-fade-up" data-category="overall">
+            <div class="record-header">
+              <span class="record-category">France Football</span>
+              <span class="record-badge">5 Trophies</span>
+            </div>
+            <div class="record-number" data-target="5">0</div>
+            <h4 class="record-label">Ballon d'Or Awards</h4>
+            <p class="record-detail">Won across two clubs (2008 at Manchester United; 2013, 2014, 2016, 2017 at Real Madrid).</p>
+          </div>
+
+          <!-- 6. Official Career Goals -->
+          <div class="record-card reveal-fade-up" data-category="overall">
+            <div class="record-header">
+              <span class="record-category">History</span>
+              <span class="record-badge">Historic Pioneer</span>
+            </div>
+            <div class="record-number" data-target="900" data-suffix="+">0</div>
+            <h4 class="record-label">Official Career Goals</h4>
+            <p class="record-detail">The first male player in professional football history to score 900+ official goals for club and country.</p>
+          </div>
+
+          <!-- 7. EURO Finals Goals -->
+          <div class="record-card reveal-fade-up" data-category="international">
+            <div class="record-header">
+              <span class="record-category">UEFA EURO</span>
+              <span class="record-badge">All-Time High</span>
+            </div>
+            <div class="record-number" data-target="14">0</div>
+            <h4 class="record-label">EURO Tournament Goals</h4>
+            <p class="record-detail">All-time record holder for goals in UEFA European Championship final tournaments, appearing in 6 distinct EUROs.</p>
+          </div>
+
+          <!-- 8. European Golden Shoes -->
+          <div class="record-card reveal-fade-up" data-category="overall">
+            <div class="record-header">
+              <span class="record-category">ESM Golden Shoe</span>
+              <span class="record-badge">4x Winner</span>
+            </div>
+            <div class="record-number" data-target="4">0</div>
+            <h4 class="record-label">European Golden Shoes</h4>
+            <p class="record-detail">Awarded in 2008 (31 goals), 2011 (40 goals), 2014 (31 goals), and 2015 (48 goals).</p>
+          </div>
+
+        </div>
+
+        <!-- Sourced Verification Banner -->
+        <div class="records-source-banner reveal-fade-up">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <span>Sourced directly from verified UEFA, FIFA, and official international federation tournament records. Updated September 2026.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CINEMATIC GALLERY SECTION
+         ========================================================================== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag">VISUAL ARCHIVE</span>
+          <h2 class="section-title">CINEMATIC <span>GALLERY</span></h2>
+          <p class="section-subtitle">
+            A curated visual chronicle of iconic celebrations, legendary matches, and historic silverware. Click any image to view in full resolution.
+          </p>
+        </div>
+
+        <!-- Gallery Category Filter Pills -->
+        <div class="gallery-filters reveal-fade-up">
+          <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+          <button class="gallery-filter-btn" data-filter="portugal">Portugal Kit</button>
+          <button class="gallery-filter-btn" data-filter="madrid">Real Madrid</button>
+          <button class="gallery-filter-btn" data-filter="manchester">Man United</button>
+          <button class="gallery-filter-btn" data-filter="juventus">Juventus</button>
+          <button class="gallery-filter-btn" data-filter="trophy">Trophies</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+
+          <!-- 1. Hero Portugal Portrait -->
+          <div class="gallery-item tall reveal-fade-up" data-category="portugal">
+            <img src="assets/images/hero-ronaldo.jpg" alt="Cristiano Ronaldo Portugal Portrait" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Portugal National Team</span>
+              <h4 class="gallery-title">The National Captain</h4>
+            </div>
+          </div>
+
+          <!-- 2. Ballon d'Or Trophy -->
+          <div class="gallery-item reveal-fade-up" data-category="trophy">
+            <img src="assets/images/ballon-dor.jpg" alt="Cristiano Ronaldo holding the Ballon d'Or trophy" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Individual Glory</span>
+              <h4 class="gallery-title">5x Ballon d'Or Laureate</h4>
+            </div>
+          </div>
+
+          <!-- 3. Real Madrid White Kit -->
+          <div class="gallery-item reveal-fade-up" data-category="madrid">
+            <img src="assets/images/real-madrid.jpg" alt="Cristiano Ronaldo in iconic Real Madrid kit" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Real Madrid</span>
+              <h4 class="gallery-title">Santiago Bernabéu Maestro</h4>
+            </div>
+          </div>
+
+          <!-- 4. Champions League European Match -->
+          <div class="gallery-item tall reveal-fade-up" data-category="madrid trophy">
+            <img src="assets/images/champions-league.jpg" alt="Cristiano Ronaldo Champions League Action" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Champions League</span>
+              <h4 class="gallery-title">European Dominance</h4>
+            </div>
+          </div>
+
+          <!-- 5. Manchester United Classic -->
+          <div class="gallery-item reveal-fade-up" data-category="manchester">
+            <img src="assets/images/manchester-united-classic.jpg" alt="Cristiano Ronaldo Manchester United early era" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Manchester United</span>
+              <h4 class="gallery-title">Theatre of Dreams Breakthrough</h4>
+            </div>
+          </div>
+
+          <!-- 6. Portugal EURO 2016 -->
+          <div class="gallery-item tall reveal-fade-up" data-category="portugal trophy">
+            <img src="assets/images/portugal-euro.jpg" alt="Cristiano Ronaldo UEFA EURO 2016" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">UEFA EURO 2016</span>
+              <h4 class="gallery-title">European Champion</h4>
+            </div>
+          </div>
+
+          <!-- 7. Juventus Serie A -->
+          <div class="gallery-item reveal-fade-up" data-category="juventus">
+            <img src="assets/images/juventus.jpg" alt="Cristiano Ronaldo Juventus Torino derby" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Juventus FC</span>
+              <h4 class="gallery-title">Serie A Supremacy</h4>
+            </div>
+          </div>
+
+          <!-- 8. Manchester United Return -->
+          <div class="gallery-item reveal-fade-up" data-category="manchester">
+            <img src="assets/images/manchester-united-return.jpg" alt="Cristiano Ronaldo return to Old Trafford September 2021" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Manchester United</span>
+              <h4 class="gallery-title">The Old Trafford Homecoming</h4>
+            </div>
+          </div>
+
+          <!-- 9. Portugal Action Captain -->
+          <div class="gallery-item reveal-fade-up" data-category="portugal">
+            <img src="assets/images/portugal-nation.jpg" alt="Cristiano Ronaldo leading Portugal on the pitch" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Portugal</span>
+              <h4 class="gallery-title">234 Caps & 146 Goals</h4>
+            </div>
+          </div>
+
+          <!-- 10. Al Nassr -->
+          <div class="gallery-item reveal-fade-up" data-category="alnassr">
+            <img src="assets/images/al-nassr.jpg" alt="Cristiano Ronaldo in Al Nassr kit" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Al Nassr FC</span>
+              <h4 class="gallery-title">The Arabian Frontier</h4>
+            </div>
+          </div>
+
+          <!-- 11. Madeira Roots -->
+          <div class="gallery-item reveal-fade-up" data-category="portugal">
+            <img src="assets/images/madeira.jpg" alt="CR7 Museum and Hotel in Funchal Madeira" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Madeira, Portugal</span>
+              <h4 class="gallery-title">The Roots in Funchal</h4>
+            </div>
+          </div>
+
+          <!-- 12. Young Ronaldo 2007 -->
+          <div class="gallery-item reveal-fade-up" data-category="manchester">
+            <img src="assets/images/young-cr7.jpg" alt="Young Cristiano Ronaldo 2007" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-category">Rising Star</span>
+              <h4 class="gallery-title">The Emergence of Greatness</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Lightbox Component -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+      <div class="lightbox-container">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+          <svg viewBox="0 0 24 24" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2.5"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2.5"/></svg>
+        </button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image">
+          <svg viewBox="0 0 24 24" width="24" height="24"><polyline points="15 18 9 12 15 6" stroke="currentColor" stroke-width="2.5" fill="none"/></svg>
+        </button>
+
+        <div class="lightbox-img-wrapper">
+          <img src="" alt="" id="lightboxImg">
+        </div>
+
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image">
+          <svg viewBox="0 0 24 24" width="24" height="24"><polyline points="9 18 15 12 9 6" stroke="currentColor" stroke-width="2.5" fill="none"/></svg>
+        </button>
+
+        <div class="lightbox-caption">
+          <h4 id="lightboxTitle">Cristiano Ronaldo</h4>
+          <p id="lightboxDesc">Football Icon</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         QUOTE / MOTIVATION SECTION
+         ========================================================================== -->
+    <section class="section quote-section" id="quotes">
+      <div class="quote-backdrop">CR7</div>
+
+      <div class="container quote-container">
+        <!-- SVG Quotation Mark -->
+        <svg class="quote-icon-svg" viewBox="0 0 24 24">
+          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+
+        <div class="quote-carousel">
+
+          <!-- Quote 1 -->
+          <div class="quote-slide active">
+            <blockquote class="quote-text">
+              "Your love makes me strong, your hate makes me unstoppable."
+            </blockquote>
+            <div class="quote-attribution">
+              <span class="quote-author">Cristiano Ronaldo</span>
+              <span class="quote-dash"></span>
+              <span class="quote-context">On Pressure & Critics</span>
+            </div>
+          </div>
+
+          <!-- Quote 2 -->
+          <div class="quote-slide">
+            <blockquote class="quote-text">
+              "Talent without working hard is nothing."
+            </blockquote>
+            <div class="quote-attribution">
+              <span class="quote-author">Cristiano Ronaldo</span>
+              <span class="quote-dash"></span>
+              <span class="quote-context">Work Ethic & Discipline</span>
+            </div>
+          </div>
+
+          <!-- Quote 3 -->
+          <div class="quote-slide">
+            <blockquote class="quote-text">
+              "I'm not a perfectionist, but I like to feel that things are done well. More important than that, I feel an endless need to learn, to improve, to evolve."
+            </blockquote>
+            <div class="quote-attribution">
+              <span class="quote-author">Cristiano Ronaldo</span>
+              <span class="quote-dash"></span>
+              <span class="quote-context">Philosophy of Growth</span>
+            </div>
+          </div>
+
+          <!-- Quote 4 -->
+          <div class="quote-slide">
+            <blockquote class="quote-text">
+              "Dedication, hard work all the time, and belief. If you don't believe you are the best, then you will never achieve all that you are capable of."
+            </blockquote>
+            <div class="quote-attribution">
+              <span class="quote-author">Cristiano Ronaldo</span>
+              <span class="quote-dash"></span>
+              <span class="quote-context">On Mindset & Excellence</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Dots -->
+        <div class="quote-controls">
+          <button class="quote-dot active" aria-label="Quote 1"></button>
+          <button class="quote-dot" aria-label="Quote 2"></button>
+          <button class="quote-dot" aria-label="Quote 3"></button>
+          <button class="quote-dot" aria-label="Quote 4"></button>
+        </div>
+
+        <!-- Interactive SIUUU Celebration Button -->
+        <div class="siuu-banner">
+          <button class="siuu-btn" id="siuuBtn" title="Play Iconic Celebration Sound">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>CELEBRATE — SIUUU!</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand & Mission -->
+        <div class="footer-brand">
+          <h3 class="footer-brand-title">CRISTIANO RONALDO</h3>
+          <p class="footer-motto">Football • Dedication • Excellence</p>
+          <p class="footer-text">
+            A premium tribute celebrating the monumental career, unmatched longevity, and eternal legacy of one of the greatest athletes to grace football.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-col">
+          <h4>EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#career">Career Timeline</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#records">Records Dashboard</a></li>
+            <li><a href="#gallery">Cinematic Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Iconic Eras -->
+        <div class="footer-col">
+          <h4>CLUBS & COUNTRY</h4>
+          <ul class="footer-links">
+            <li><a href="#career">Portugal (2003–Present)</a></li>
+            <li><a href="#career">Manchester United</a></li>
+            <li><a href="#career">Real Madrid CF</a></li>
+            <li><a href="#career">Juventus FC</a></li>
+            <li><a href="#career">Al Nassr FC</a></li>
+            <li><a href="#biography">Sporting CP</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Career Snapshot -->
+        <div class="footer-col">
+          <h4>CAREER TOTALS</h4>
+          <div class="footer-stats-summary">
+            <div class="footer-mini-stat">
+              <span class="footer-mini-label">Ballon d'Or Awards</span>
+              <span class="footer-mini-val">5</span>
+            </div>
+            <div class="footer-mini-stat">
+              <span class="footer-mini-label">Champions League Titles</span>
+              <span class="footer-mini-val">5</span>
+            </div>
+            <div class="footer-mini-stat">
+              <span class="footer-mini-label">International Goals</span>
+              <span class="footer-mini-val">146</span>
+            </div>
+            <div class="footer-mini-stat">
+              <span class="footer-mini-label">Career Goals</span>
+              <span class="footer-mini-val">900+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits & Back to Top -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Cristiano Ronaldo Tribute. Designed with cinematic elegance. Data verified via UEFA & FIFA official records.
+        </p>
+
+        <button class="back-to-top-btn" id="backToTop" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
